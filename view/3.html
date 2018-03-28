@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="format-detection" content="telephone=no" />
+		<title></title>
+		<link href="https://cdn.bootcss.com/mui/3.7.1/css/mui.min.css" rel="stylesheet">
+		<style type="text/css">
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#imageAll {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			#image {
+				display: block;
+				margin: 0 auto;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+
+	<body>
+		<audio loop src="audio/Valentin - A Little Story.mp3" autoplay preload="auto"></audio>
+		<div id="imageAll">
+			<img id="image" src="img/1.JPG" alt="" />
+		</div>
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/mui/3.7.1/js/mui.js"></script>
+	<script src="js/jquery.animations.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.animations-tile.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app2.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$("#imageAll").height($(window).height())
+	$("#image").on("touchmove",function(event){
+		event.preventDefault();
+	})
+</script>
+</html>
